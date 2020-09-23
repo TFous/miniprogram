@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="page-body" style="width: 100%">
+    <view>
+      <swiper :indicator-dots="false"
+              class="swiper-wraper"
+              :autoplay="true" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <image style="height: 600rpx;width:100%;" :mode="aspectFit" src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <view class="page-section page-section-spacing">
+      11111111111
+    </view>
+  </view>
+</view>
